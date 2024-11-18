@@ -146,17 +146,17 @@ const loginAccount = async (req, res) => {
                     return res.render('verify-otp', { message: "A 2FA code has been sent to your email. Please enter it to complete the login.", success: true, Email: studentExist.Email, alert: true });
 
                 } else {
-                    return res.render('login', { message: "Please verify your email first.", success: false, alert: true });
+                    return res.render('Login', { message: "Please verify your email first.", success: false, alert: true });
                 }
             } else {
-                return res.render('login', { message: "Password mismatch", success: false, alert: true });
+                return res.render('Login', { message: "Password mismatch", success: false, alert: true });
             }
         } else {
-            return res.render('login', { message: "Matric number not found", success: false, alert: true });
+            return res.render('Login', { message: "Matric number not found", success: false, alert: true });
         }
     } catch (err) {
         console.error("Error occurred in loginAccount:", err);
-        return res.render('login', { message: "Error occurred", success: false, error: err.message, alert: true });
+        return res.render('Login', { message: "Error occurred", success: false, error: err.message, alert: true });
     }
 };
 
