@@ -57,7 +57,7 @@ const createAccount = async (req, res) => {
             <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
                 <p>Hello <strong>${First_Name}</strong>,</p>
                 
-                <p>Thank you for registering with Lagos State University Of Science And Technology. Your account has been created successfully. Below are your login details:</p>
+                <p>Thank you for registering with Ed-John School of Management. Your account has been created successfully. Below are your login details:</p>
                 
                 <p>Matric Number: <strong>${Matric}</strong></p>
                 <p>Password: <strong>${Password}</strong></p>
@@ -67,7 +67,7 @@ const createAccount = async (req, res) => {
                 <p style="font-size: 18px; font-weight: bold; color: #007BFF;">${verificationCode}</p>
                 
                 <p>Best regards,<br>
-                Lagos State University Of Science And Technology</p>
+                Ed-John School Of Management</p>
                 
                 <p style="font-size: 12px; color: #888;">
                     <i>Disclaimer: This website is built for testing/projects purposes and does not represent the official institution.</i>
