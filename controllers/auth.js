@@ -10,7 +10,7 @@ require('dotenv').config();
 const generateMatricNumber = async () => {
     try {
         const lastStudent = await userSchema.findOne().sort({ Matric: -1 }); // Get the student with the highest matric number
-        let lastMatricNumber = lastStudent ? lastStudent.Matric : 2106171000; // Start from 2106171000 if no students exist
+        let lastMatricNumber = lastStudent ? lastStudent.Matric : 1234560000; // Start from 2106171000 if no students exist
         return lastMatricNumber + 1;
     } catch (error) {
         console.error("Error generating matric number:", error);
