@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url('images/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(55, 55, 55, 0.3);
+}
+
+.form-v5-content {
+	background: #fff;
+	width: 150%;
+	height: auto;
+        padding: 20px;
+	max-width: 400px; /* Reduced width for no scrolling */
+	border-radius: 8px;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-weight: 400;
+	position: relative;
+	font-size: 15px; /* Reduced font size */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-v5-content .form-detail {
+	padding: 5px 20px; /* Reduced padding */
+	position: relative;
+}
+.form-detail h2 {
+	font-weight: 700;
+	font-size: 22px; /* Reduced font size */
+	text-align: center;
+	position: relative;
+	padding: 3px 0 15px;
+	margin-bottom: 30px;
+}
+.form-detail h2::after {
+	background: #96353d;
+	width: 50px;
+	height: 2px;
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-detail .form-row {
+	position: relative;
+	margin-bottom: 15px; /* Added margin for spacing */
+}
+.form-detail .form-row-last {
+	text-align: center;
+	margin-top: 20px;
+}
+.form-detail label {
+	display: block;
+	font-size: 14px; /* Reduced font size */
+	padding-bottom: 5px; /* Reduced padding */
+}
+.input-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 8px 12px; /* Reduced padding */
+}
+.input-text {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 14px; /* Reduced font size */
+	margin-left: 10px; /* Space between icon and text */
+}
+.input-text::placeholder {
+	color: #999;
+}
+.form-detail input[type="file"] {
+	margin-top: 10px;
+	display: none; /* Hide the default file input */
+}
+.file-input-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.file-label {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #e5e5e5;
+	color: #333;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.file-label:hover {
+	background-color: #d4d4d4; /* Hover color */
+}
+.form-detail .register {
+	font-size: 16px; /* Reduced font size */
+	color: #fff;
+	background: #5e0209;
+	border-radius: 5px;
+	width: 100%;
+	padding: 12px; /* Reduced padding */
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+	border: none;
+	cursor: pointer;
+}
+.form-detail .register:hover {
+	background: #c90515;
+}
+.form-detail i {
+	font-size: 14px;
+	color: #999;
+}

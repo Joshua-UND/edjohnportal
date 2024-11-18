@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+:root {
+    --bold-font: 'Noto Serif', serif;
+    --normal-font: 'Rubik', sans-serif;
+    --paragraph-font: 'Rubik', sans-serif;
+    --main-color: #5521B5;
+    --grey-color: #F4F6F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    padding: 7em 3em;
+}
+
+.active {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* HEADER SECTION */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    background-color: white;
+}
+
+header nav {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header .logo h1 {
+    font-family: var(--bold-font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: black;
+    font-family: var(--normal-font);
+    font-weight: 500;
+}
+
+.star button {
+    background-color: var(--grey-color);
+    border: 1px solid gainsboro;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    font-family: var(--normal-font);
+    font-weight: 600;
+}
+
+.star button:last-child {
+    background-color: white;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.button a button {
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-family: var(--normal-font);
+}
+
+/* HERO SECTION */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.grid-text {
+    grid-column: span 6;
+    align-self: center;
+}
+
+.grid-img {
+    grid-column: span 6;
+}
+
+.grid-img img {
+    width: 100%;
+}
+
+.grid-text h1 {
+    font-family: var(--bold-font);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.0;
+    padding-bottom: 0.3em;
+}
+
+.grid-text p {
+    line-height: 2;
+    font-weight: 100;
+    font-family: var(--paragraph-font);
+    padding-bottom: 0.3em;
+}
+
+.hero-button a button {
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid gainsboro;
+    font-family: var(--normal-font);
+}
+
+.grid-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.grid-icons p {
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+    font-family: var(--normal-font);
+}
+
+/* WORK SECTION */
+.work {
+    background-color: var(--grey-color);
+}
+
+.work-text {
+    font-family: var(--normal-font);
+    grid-column: span 6;
+    align-self: center;
+}
+
+.work-img {
+    grid-column: span 6;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.work-text h1 {
+    font-family: var(--bold-font);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.0;
+    padding-bottom: 0.5em;
+}
+
+.work-text p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: var(--paragraph-font);
+    padding: 1.5em 0;
+}
+
+.list .list-1 {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.list .list-1 p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.list .list-1 i {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    padding: 0.3em;
+}

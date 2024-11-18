@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="container" id="left-container">
+            <a href="/"><img src="images/logo.png" alt="Student's Login Image"></a>
+            <h1>Student's Login</h1>
+            <hr>
+            <p>Your User name is the Matric Number, the default password is your Surname in lowercase</p>
+            <hr>
+            <p>For any assistance</p>
+            <div class="contact-info">
+                <a href="tel:+2349069927518">
+                    <img src="images/tel.png" alt="Telephone Icon">
+                </a>
+                <div class="telegram">
+                    <a href="https://telegram.me/">
+                        <img src="images/telegram.png" alt="Telegram Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="right-container">
+          <div class="wrapper">
+            
+            <div class="top"></div>
+            <form id="login-form" action="/Login " method="post">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <input id="matric" name="Matric" type="text" placeholder="Your Matric No." required>
+              </div>
+              <div class="row">
+                <i class="fas fa-lock"></i>
+                <input id="Password" name="Password" type="password" placeholder="Password" required>
+              </div>
+              <div class="pass"><a href="/sign-up">Sign Up?</a></div>
+              <div class="row button">
+                <input type="submit" value="Login">
+              </div>
+            </form>
+        
+        </div>
+        
+    </div> 
+    {{#if alert}}
+    <script>
+        Swal.fire({
+            title: '{{#if success}}Success!{{else}}Error!{{/if}}',
+            text: '{{message}}',
+            icon: '{{#if success}}success{{else}}error{{/if}}',
+            confirmButtonText: 'OK'
+        });
+    </script>
+    {{/if}}
+    
+</body>
+</html>

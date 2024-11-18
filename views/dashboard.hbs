@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Lagos State University of Science and Technology" height="200%" width="150%">
+            </div>
+            <div class="profile-info">
+                <div class="greeting">
+                    <span id="greeting">Loading...</span>
+                    <a href="/Logout" class="logout-button">Log Out</a>
+                </div>
+                <div class="profile-picture">
+                    <!-- Display the user's profile image -->
+                    <img src="profile.jpg" alt="profile-picture" style="max-width: 200px;" />
+                    <!--<img src="{{Profile_Image}}" alt="profile-picture" style="max-width: 200px;" />-->
+                </div>
+            </div>
+        </header>
+        <span id="greeting2">Loading...</span>
+        </span>
+        
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">My Profiles</a></li>
+                <li class="dropdown">
+                    <a href="#">My Payments</a>
+                    <div class="dropdown-content">
+                        <a href="#">Previous Payments</a>
+                        <a href="#">Payment Manager</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">My Courses</a>
+                    <div class="dropdown-content">
+                        <a href="#">My Course Registration</a>
+                        <a href="#">My Course Registration Form</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">My Results</a>
+                    <div class="dropdown-content">
+                        <a href="#">My Results</a>
+                        <a href="#">My Transcript</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Year 1 Printouts</a>
+                    <div class="dropdown-content">
+                        <a href="#">Admission Letter</a>
+                        <a href="#">Post UTME Aggregate</a>
+                        <a href="#">Data Form</a>
+                        <a href="#">Medical Form</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="grid-container">
+                <a href="#"><div class="grid-item"><i class="fas fa-user"></i><p>My Profile</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-wallet"></i><p>New Payments</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-clipboard"></i><p>Exam Docket</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-file-alt"></i><p>Results</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-receipt"></i><p>Receipts</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-key"></i><p>Password</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-book"></i><p>Course Registration</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-bolt"></i><p>My Transcript</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-file-signature"></i><p>My Admission Letter</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-hammer"></i><p>My SIWES</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-money-check-alt"></i><p>Payment Manager</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-user-edit"></i><p>Edit My Profile</p></div></a>
+                <a href="#"><div class="grid-item"><i class="fas fa-info-circle"></i><p>Contact Support</p></div></a>
+            </div>
+            <p class="welcome-text">Welcome, if this is your first time logging in, the first thing to do is to edit your profile. Once you do this, you will be able to make payments and perform other tasks.</p>
+        </main>
+        <footer>
+            <p>&copy; 2024 Lagos State University of Science and Technology, Ikorodu. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script>
+        // Dropdown functionality
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+            this.querySelector('.dropdown-content').style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseleave', function() {
+            this.querySelector('.dropdown-content').style.display = 'none';
+        });
+    });
+    </script>
+
+    <!-- SweetAlert Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const successMessage = '{{successMessage}}';
+            const errorMessage = '{{errorMessage}}';
+
+            if (successMessage) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: successMessage,
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            }
+
+            if (errorMessage) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: errorMessage,
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+
+            // JavaScript to set greeting based on time
+            function getGreeting() {
+                const now = new Date();
+                const hours = now.getHours();
+                let greetingMessage;
+
+                if (hours < 12) {
+                    greetingMessage = 'Good Morning';
+                } else if (hours < 18) {
+                    greetingMessage = 'Good Afternoon';
+                } else {
+                    greetingMessage = 'Good Evening';
+                }
+
+                return greetingMessage;
+            }
+
+            // Set greeting in the DOM
+            const greeting = document.getElementById('greeting');
+            const greeting2 = document.getElementById('greeting2');
+            const greetingMessage = getGreeting();
+            
+            // Transform the name to uppercase
+            const firstName = '{{First_Name}}';
+            const lastName = '{{Last_Name}}';
+            const userName = `${firstName} ${lastName}`.toUpperCase();
+            
+            // Set content for both places
+            greeting.textContent = `${greetingMessage} ${userName}`;
+            greeting2.textContent = `${greetingMessage} ${userName}`;
+        });
+    </script>
+</body>
+</html>

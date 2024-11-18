@@ -1,0 +1,86 @@
+.wrapper {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .top {
+    height: 10px;
+    background: #5e0209;
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper form {
+    padding: 20px 15px;
+    font-size: 0.9em; 
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 50px; 
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #5e0209;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+form .row input::placeholder {
+    color: #999;
+    font-size: .9em;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 40px; 
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #5e0209;
+    border: 1px solid #5e0209;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #5e0209;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #5e0209;
+    border: 1px solid #5e0209;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background: #ce0415;
+}

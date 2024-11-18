@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="loginverifystyle.css">
+</head>
+<body>
+  <div class="body-container">
+    <div class="container">
+        <h1>Verify Your OTP</h1>
+
+        {{#if success}}
+            <div class="alert alert-success">{{message}}</div>
+        {{/if}}
+
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{/if}}
+
+        <form action="/verify-otp" method="POST">
+            <input type="hidden" name="email" value="{{Email}}">
+            <label for="otpCode">Enter OTP Code:</label>
+            <input type="text" id="otpCode" name="otp" required>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        {{#if alert}}
+            Swal.fire({
+                icon: '{{#if success}}success{{else}}error{{/if}}',
+                title: '{{#if success}}Success!{{else}}Error!{{/if}}',
+                text: '{{message}}'
+            });
+        {{/if}}
+    </script>
+   
+</body>
+</html>

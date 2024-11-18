@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* the header  */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position:relative;
+    cursor: pointer;
+    
+}
+/* the header img */
+
+.Pinwheel-pa{
+    padding: 2em 6em;
+}
+header img{
+    width: 16px;
+}
+/* the list unorder styling */
+nav ul{ 
+      list-style: none;
+             display: flex;
+                  gap: 5em;
+                  padding: 2em;
+                 
+                  
+}
+/* removement of underline and color the list item on the list */
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+  /* button styling */
+#btn{
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    height: 35px;
+    width: 150px;
+    box-shadow: 2px 1px 2px black;
+    margin-top: 1em;
+    
+   font-weight: bold;
+   cursor: pointer;
+}
+.btn-pa{
+    padding: 1em 4em;
+}
+/* making the selected list underline when clicked or on it */
+.home{
+border-bottom: 2px solid #fcac69;
+font-weight: bold;
+}
+/* header end section began!!!! */
+.section-text{
+    font-size: 50px;
+    padding: 2em 1em;
+}
+.section-text p{
+    font-size: 30px;
+    
+}
+.image-to-rotate{
+    padding: 5em 1em;
+
+}
+#section1{
+    display: flex;
+    
+}
+.corner-img{
+position: absolute;
+left: 80em;
+top: -5em;
+z-index: -99;
+width:22em;
+}
+.tiny-corner-img{
+    width: 7em;
+    position: absolute;
+    top: 33em;
+    left: -3em;
+    z-index: -99;
+    
+}
+aside{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    
+}
+aside h3{
+    font-size:50px ;
+    
+}
+aside p{
+    font-size: 25px;
+}
+.container-1{
+    background-color:white;
+    width: 30%;
+    height:fit-content;
+    box-shadow:1px 1px 3px;
+padding: 50px;
+justify-content: space-between;
+margin: 20px;
+}
+#container-wrapper{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+
+}
+/* first styling div of section2 */
+.fire{
+    width: 300px;
+    height: 40px;
+    background-color: #fcac69;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* .item{
+gap: 50em;
+} */
+/* the first fire */
+ #section2 div{
+    margin-top: 19px;
+    
+} 
+
+#section2{
+    margin-top: -80px; 
+    margin-left: 75px;
+}
+/* the slaes imag styling */
+.sale-img{
+    width: 40em;
+}
+main{
+    display: flex;
+     justify-content: space-around;
+    
+}
+main div h2{
+    font-size: 50px;
+}
+main div p{
+    font-size: 30px;
+
+
+}
+#collabo-img{
+width: 50em;
+}
+#total{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+ h3.accept{
+    font-size: 50px;
+    margin-bottom: 0.5em;
+}
+p.lorem{
+    font-size: 25px;
+}
+.check{
+    font-size: 30px;
+    
+}
+/* 6th section not completed coming back later  */
+
+
+h3.account{
+    font-size: 50px;
+    margin-bottom: 0.5em;
+}
+
+.youtube{
+    display: flex;
+    gap: 30em;
+}
+
+.youtube-vid{
+    position: relative;
+}
+
+.youtube-img{
+position: absolute;
+top: 0;
+width: 100%;
+}
+.youtube-img img{
+    width: 100%;
+}
+
+.play{
+position: absolute;
+padding: 2em;
+display: inline-block;
+top: 45%;
+left: 45%;
+border-radius: 50%;
+background-color: orangered;
+} 
+.play i{
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+#customer-review{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7em;
+}
+#customer-review h3{
+    font-size: 3em;
+}
+#customer-review p{
+    font-size: 2em;
+    
+}
+
+
+.container6{
+    width: 30em;
+    background-color:white;
+    box-shadow: 1px 1px 1px 1px;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+.container6 .human-img{
+margin-top: -2em;
+
+}
+
+.container7{
+    width: 30em;
+    background-color:white;
+    box-shadow: 1px 1px 1px 1px;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+.container7 .human-img{
+margin-top: -2em;
+
+}
+
+
+.container8{
+    width:30em;
+    background-color:white;
+    box-shadow: 1px 1px 1px 1px;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+.container8 .human-img{
+margin-top: -2em;
+
+}
+#container6-wrapper{
+    display: flex;
+justify-content: space-between;
+ flex-wrap: wrap;
+}
+.circle{
+    background-color:orangered;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+   
+}
+
+.circle{
+    background-color:orangered;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+   
+}
+
+.circle1{
+    background-color:rgba(128, 128, 128, 0.815);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+   
+}
+.total-circle{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.gradient{
+    margin-top: 12em;
+    height: 200px;
+    width: 95%;
+    background-image: linear-gradient(orangered, yellow);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    gap: 10em;
+    align-items: center;
+    margin-left:4em;
+    
+}
+.gradient h1{
+    color: white;
+    margin-left: 2em;
+
+}
+.gradient p{
+    color: white;
+    margin-top: -3em;
+    margin-left: 33em;
+}
+footer{
+    margin-top: 10em;
+    background-color: gray;
+   max-width: 100%;
+    height: 300px;
+   
+}
+.footer1{
+    display:flex;
+    justify-content: space-between;
+}
+.footer-img{
+    width: 0.5em;
+    
+}
+.footer2{
+    margin-left: 3em;
+    padding-top: 2em;
+}
+.footer3 li{
+    list-style: none;
+}
+.footer3 a{
+    text-decoration: none;
+    color: black;
+}
+.icon9 img{
+    gap: 2em;
+}
+/* p.footer4{
+    margin-top:20px;
+} */
+.icon9 .footer-icon img{
+margin-left: 2em;
+}
+.image-to-rotate{
+    transition: all 0.3s ease;
+}
+.image-to-rotate:hover{
+    transform: translateX(-20px);
+}
+
+/* .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: translateX(-20px);
+}
+ */
+ /* media query */
+ @media only screen and (max-width: 992px) {
+    #section1{
+        flex-direction: column;
+    }
+ 
+    aside{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+ }
