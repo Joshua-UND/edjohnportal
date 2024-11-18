@@ -57,7 +57,7 @@ const createAccount = async (req, res) => {
             <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
                 <p>Hello <strong>${First_Name}</strong>,</p>
                 
-                <p>Thank you for registering with Ed-John School of Management. Your account has been created successfully. Below are your login details:</p>
+                <p>Thank you for registering with Ed-John Institute of Management And Technology. Your account has been created successfully. Below are your login details:</p>
                 
                 <p>Matric Number: <strong>${Matric}</strong></p>
                 <p>Password: <strong>${Password}</strong></p>
@@ -67,7 +67,7 @@ const createAccount = async (req, res) => {
                 <p style="font-size: 18px; font-weight: bold; color: #007BFF;">${verificationCode}</p>
                 
                 <p>Best regards,<br>
-                Ed-John School Of Management</p>
+                Ed-John Institute Of Management And Technology</p>
                 
                 <p style="font-size: 12px; color: #888;">
                     <i>Disclaimer: This website is built for testing/projects purposes and does not represent the official institution.</i>
@@ -78,7 +78,7 @@ const createAccount = async (req, res) => {
         const mailOptions = {
             from: 'lasustech.project@hotmail.com',
             to: Email,
-            subject: "Lassustech Account Details & Email Verification",
+            subject: "Ed-John Account Details & Email Verification",
             html: message
         };
 
@@ -127,7 +127,7 @@ const loginAccount = async (req, res) => {
                             <p>Hello <strong>${studentExist.First_Name}</strong>,</p>
                             <p>You are attempting to log in. Please use the 2FA code below to complete the login process:</p>
                             <p style="font-size: 18px; font-weight: bold; color: #007BFF;">${twoFACode}</p>
-                            <p>Best regards,<br>Lagos State University Of Science And Technology</p>
+                            <p>Best regards,<br>Ed-John Institute Of Management And Technology</p>
                             <p style="font-size: 12px; color: #888;">
                                 <i>Disclaimer: This website is built for testing/projects purposes and does not represent the official institution.</i>
                             </p>
@@ -137,7 +137,7 @@ const loginAccount = async (req, res) => {
                     const mailOptions = {
                         from: 'lasustech.project@hotmail.com',
                         to: studentExist.Email,
-                        subject: "Lassustech Login Authentication",
+                        subject: "Ed-John Portal Login Authentication",
                         html: message
                     };
 
