@@ -17,7 +17,7 @@ const verifyEmail = async (req, res) => {
         user.verificationCode = undefined; // clear the verification code
         await user.save();
 
-        return res.render('login', { message: "Email verified successfully! You can now log in.", success: true, alert: true });
+        return res.render('Login', { message: "Email verified successfully! You can now log in.", success: true, alert: true });
 
     } catch (err) {
         console.error("Error occurred in verifyEmail:", err);
