@@ -76,7 +76,7 @@ const createAccount = async (req, res) => {
         `;
 
         const mailOptions = {
-            from: 'lasustech.project@hotmail.com',
+            from: 'edjohn.project@hotmail.com',
             to: Email,
             subject: "Ed-John Account Details & Email Verification",
             html: message
@@ -135,7 +135,7 @@ const loginAccount = async (req, res) => {
                     `;
 
                     const mailOptions = {
-                        from: 'lasustech.project@hotmail.com',
+                        from: 'edjohn.project@hotmail.com',
                         to: studentExist.Email,
                         subject: "Ed-John Portal Login Authentication",
                         html: message
